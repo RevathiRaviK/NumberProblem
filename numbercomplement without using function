@@ -1,0 +1,16 @@
+class Solution {
+    public int findComplement(int num) {
+        String temp="";
+        int t;
+        while(num>0)
+        {
+            t=num%2;
+            if(t==0)
+            temp="1"+temp;
+            else
+            temp="0"+temp;
+            num=num/2;
+        }
+        return Integer.parseInt(temp,2);
+    }
+} 
